@@ -8,10 +8,10 @@ class DateRange:
     """
     A class to represent a date range.
 
-    # Construct example:
-    date_range = DateRange(
-        start=datetime(2022, 1, 1), 
-        end=datetime(2022, 1, 31))
+    # example instantiation:
+        date_range = DateRange(
+            start=datetime(2022, 1, 1), 
+            end=datetime(2022, 1, 31))
     """
     start: datetime
     end: datetime

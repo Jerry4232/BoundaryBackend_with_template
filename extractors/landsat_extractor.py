@@ -11,6 +11,11 @@ from .base import GeospatialDataExtractorBase, logger, DateRange
 
 class LandsatExtractor(GeospatialDataExtractorBase):
     def __init__(self, aoi_bounds: list[float], username: str, token: str, output_dir: str="extracted_data"):
+        """
+        Initialize the Landsat data extractor with area of interest bounds and user credentials.
+        Example AOI bounds: [-120.0, 35.0, -119.0, 36.0]
+        refer to .env_example for LANDSAT_USERNAME and LANDSAT_API_KEY
+        """
         super().__init__(aoi_bounds, output_dir)
         self.username = username
         self.token = token
