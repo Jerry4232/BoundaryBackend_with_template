@@ -44,7 +44,7 @@ class GeospatialDataExtractorBase(ABC):
         os.makedirs(self.output_dir, exist_ok=True)
 
     @abstractmethod
-    def fetch(self, date_range: DateRange) -> dict:
+    def fetch(self, date_range: DateRange | tuple[str, str]) -> dict:
         pass
 
     @abstractmethod
